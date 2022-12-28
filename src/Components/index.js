@@ -1,0 +1,10 @@
+export {default as Header} from './Header';
+export {default as Slider} from './Slider';
+export {default as Upcoming} from './Upcoming'
+export {default as Latest} from './Latest'
+export {default as Top} from './Top'
+export {default as Suggested} from './Suggested'
+export {default as Featured} from './Featured'
+export {default as Trending} from './Trending'
+export {default as Recommended} from './Recommended'
+export {default as Footer} from './Footer'
