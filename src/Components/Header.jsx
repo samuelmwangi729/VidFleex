@@ -19,8 +19,9 @@ const Header = () => {
                               <span className="navbar-menu-icon navbar-menu-icon--bottom"></span>
                            </div>
                         </a>
-                        <a className="navbar-brand" href="index.html"> <img className="img-fluid logo" src="images/logo.png" loading="lazy"
-                           alt="streamit" /> </a>
+                           <Link to={"/"}>
+                            <img className="img-fluid logo" src="images/logo.png" loading="lazy" />
+                           </Link>
                         <div className="mobile-more-menu">
                            <a href="javascript:void(0);" className="more-toggle" id="dropdownMenuButton"
                               data-toggle="more-toggle" aria-haspopup="true" aria-expanded="false">
@@ -159,14 +160,13 @@ const Header = () => {
                                  <Link to={"/Movies"}>Movies</Link>
                                  </li>
                                  <li className="menu-item">
-                                    <a href="video.html">Videos</a>
+                                    <Link to={"/Blog"}>Blog</Link>
                                  </li>
                                  <li className="menu-item">
-                                    <a href="#">Blog</a>
-                                    <ul className="sub-menu">
-                                       <li className="menu-item"><a href="blog.html">Blog</a></li>
-                                       <li className="menu-item"><a href="blog-details.html">Blog details</a></li>
-                                    </ul>
+                                    <Link to={"/About"}>About Us</Link>
+                                 </li>
+                                 <li className="menu-item">
+                                    <Link to={"/Contact"}>Contact Us</Link>
                                  </li>
                                  <li className="menu-item">
                                     <a href="#">Pages</a>

@@ -11,3 +11,6 @@ export {default as Footer} from './Footer';
 export {default as Homepage} from './Homepage';
 export {default as Genres} from './Genres';
 export {default as Videos} from './Videos'
+export {default as Blog} from './Blog'
+export {default as About} from './About'
+export {default as Contact} from './Contact'
