@@ -16,7 +16,7 @@ const Trending = () => {
     const [img,setImg] = useState("")
   return (
     <>
-         <section class="">
+         <section class="" style={{marginTop:-20}}>
             <div class="container-fluid">
                <div class="row m-0 p-0">
                   <div id="iq-trending" class="s-margin iq-tvshow-tabs iq-rtl-direction iq-trending-tabs">
@@ -108,7 +108,7 @@ const Trending = () => {
                                         </li>
                                     </ul>
                                     <div class="tab-content trending-content" style={{
-                                        backgroundImage: "url(" + "../../public/images/tvthrillers/04.jpg" + ")",
+                                        backgroundImage: "url(" + "public/images/tvthrillers/04.jpg" + ")",
                                         backgroundPosition: 'center center',
                                         backgroundSize: 'cover',
                                         backgroundRepeat: 'no-repeat',

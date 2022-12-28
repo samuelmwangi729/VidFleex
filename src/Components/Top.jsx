@@ -15,7 +15,7 @@ const Top = () => {
     const [img,setImg] = useState("")
   return (
     <>
-        <div class="verticle-slider">
+        <div class="verticle-slider" style={{marginTop:-150}}>
             <div class="container-fluid">
                 <section class="slider">
                   <div class="slider-flex position-relative">

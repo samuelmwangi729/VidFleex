@@ -3,7 +3,7 @@ import React from 'react'
 const Featured = () => {
   return (
     <>
-    <section id="parallex" class="parallax-window row-fluid">
+    <section id="parallex" class="parallax-window row-fluid" style={{marginTop:-150}}>
             <div class="container-fluid h-100">
                <div class="row align-items-center justify-content-center h-100 parallaxt-details">
                   <div class="col-xl-5 col-lg-12 col-md-12 r-mb-23">

@@ -15,7 +15,7 @@ import SwiperCore, {
 const Suggested = () => {
   return (
     <React.Fragment>
-      <section id="iq-favorites">
+      <section id="iq-favorites" style={{marginTop:50}}>
             <div className="container-fluid">
                <div className="row">
                   <div className="col-sm-12 overflow-hidden">

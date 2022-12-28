@@ -15,7 +15,7 @@ import SwiperCore, {
 const Upcoming = () => {
   return (
     <React.Fragment>
-      <section id="iq-favorites">
+      <section id="iq-favorites" style={{marginTop:-150}}>
             <div className="container-fluid">
                <div className="row">
                   <div className="col-sm-12 overflow-hidden">

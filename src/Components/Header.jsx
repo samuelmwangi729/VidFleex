@@ -1,6 +1,7 @@
-import React from 'react'
-
+import React,{useState} from 'react'
+import { Link } from 'react-router-dom'
 const Header = () => {
+   const [activeClass,setActive] = useState("")
   return (
    <>
       <header id="main-header">
@@ -148,14 +149,14 @@ const Header = () => {
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                            <div className="menu-main-menu-container">
                               <ul id="top-menu" className="navbar-nav ml-auto">
-                                 <li className="menu-item active">
-                                    <a href="index.html">Home</a>
+                                 <li className={activeClass ? "menu-item active" : "menu-item"} onClick={()=>setActive("active")}>
+                                    <Link to={"/"}>Home</Link>
+                                 </li>
+                                 <li className={activeClass ? "menu-item" : "menu-item"} onClick={()=>setActive("")}>
+                                    <Link to={"/Genres"}>Genres</Link>
                                  </li>
                                  <li className="menu-item">
-                                    <a href="movie-category.html">Movies</a>
-                                 </li>
-                                 <li className="menu-item">
-                                    <a href="show-category.html">Tv Shows</a>
+                                 <Link to={"/Movies"}>Movies</Link>
                                  </li>
                                  <li className="menu-item">
                                     <a href="video.html">Videos</a>

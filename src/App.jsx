@@ -1,20 +1,17 @@
 import React from 'react'
-import {Header,Slider,Latest,Upcoming, Top,Suggested,Featured,Trending, Recommended,Footer} from './Components'
+import {Header,Footer,Homepage,Genres,Videos} from './Components'
+import {Routes, Route, Outlet} from 'react-router-dom'
 const App = () => {
   return (
     <>
       <Header/>
-      <Slider/>
-      <div className="main-content">
-        <Latest/>
-        <Upcoming/>
-        <Top/>
-        <Suggested/>
-        <Featured/>
-        <Trending/>
-        <Recommended/>
-        <Footer/>
-      </div>
+      <Routes>
+      <Route index element={<Homepage/>}/>
+      <Route path='/Genres' element={<Genres/>}/>
+      <Route path='/Movies' element={<Videos/>}/>
+      </Routes>
+        <Outlet/>
+      <Footer/>
     </>
   )
 }
