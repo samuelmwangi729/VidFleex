@@ -22,7 +22,7 @@ const Popular = () => {
             <div class="favourite-slider">
                   <div  class="swiper pt-2 pt-md-4 pt-lg-4 iq-rtl-direction" data-swiper="common-slider">
                      <ul class="swiper-wrapper m-0 p-0">
-                     <Swiper navigation={true} loop={true} slidesPerView={3}>
+                     <Swiper navigation={true} loop={true} slidesPerView={5}>
                      <SwiperSlide>
                         <li class="swiper-slide slide-item">
                            <div class="block-images position-relative ">
@@ -521,7 +521,7 @@ const Popular = () => {
             <div class="favourite-slider">
                   <div  class="swiper pt-2 pt-md-4 pt-lg-4 iq-rtl-direction" data-swiper="common-slider">
                     <ul class="swiper-wrapper m-0 p-0">
-                        <Swiper navigation={true} loop={true} slidesPerView={3}>
+                        <Swiper navigation={true} loop={true} slidesPerView={5}>
                             <SwiperSlide>
                                 <li class="swiper-slide slide-item">
                                     <div class="block-images position-relative ">

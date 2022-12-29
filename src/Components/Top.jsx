@@ -25,7 +25,7 @@ const Top = () => {
                             <div class="slider-thumbs" data-swiper="slider-thumbs">
                             <div class="swiper-container " data-swiper="slider-thumbs-inner">
                                 <div class="swiper-wrapper top-ten-slider-nav">
-                                <Swiper onRealIndexChange={(e)=>setImg($(e.imagesToLoad[e.activeIndex]).attr("src"))}  loop={true} slidesPerView={4} direction={"vertical"}  pagination  spaceBetween={10} mousewheel={true}>
+                                <Swiper onRealIndexChange={(e)=>setImg($(e.imagesToLoad[e.activeIndex]).attr("src"))}  loop={true} slidesPerView={5} direction={"vertical"}  pagination  spaceBetween={10} mousewheel={true}>
                                 <SwiperSlide>
                                     <div class="swiper-slide swiper-bg">
                                         <div class="block-images position-relative ">

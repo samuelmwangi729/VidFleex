@@ -27,7 +27,7 @@ const Upcoming = () => {
                </div>
                <div className="favourite-slider">
                   <div  className="swiper pt-2 pt-md-4 pt-lg-4 iq-rtl-direction" data-swiper="common-slider">
-      <Swiper navigation={true} loop={true} slidesPerView={3}>
+      <Swiper navigation={true} loop={true} slidesPerView={5}>
                      <ul className="swiper-wrapper p-0 m-0 ">
                      <SwiperSlide>
                         <li className="swiper-slide slide-item">
