@@ -108,7 +108,7 @@ const Trending = () => {
                                         </li>
                                     </ul>
                                     <div class="tab-content trending-content" style={{
-                                        backgroundImage: "url(" + "public/images/tvthrillers/04.jpg" + ")",
+                                        backgroundImage: "url(" + "images/tvthrillers/04.jpg" + ")",
                                         backgroundPosition: 'center center',
                                         backgroundSize: 'cover',
                                         backgroundRepeat: 'no-repeat',

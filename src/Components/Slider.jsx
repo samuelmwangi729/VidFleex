@@ -20,7 +20,7 @@ const Slider = () => {
    <div  className="slider m-0 p-0 swiper-wrapper home-slider">
    <SwiperSlide>
         <div className="swiper-slide  slide swiper-bg" style={{
-            backgroundImage: "url(" + "../../public/images/slider/slider1.jpg" + ")",
+            backgroundImage: "url(" + "images/slider/slider1.jpg" + ")",
             backgroundPosition: 'center center',
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
@@ -108,7 +108,7 @@ const Slider = () => {
    </SwiperSlide>
    <SwiperSlide>
         <div className="swiper-slide slide swiper-bg" style={{
-            backgroundImage: "url(" + "../../public/images/slider/slider2.jpg" + ")",
+            backgroundImage: "url(" + "images/slider/slider2.jpg" + ")",
             backgroundPosition: 'center center',
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
@@ -199,7 +199,7 @@ const Slider = () => {
         </div>
    </SwiperSlide>
    <SwiperSlide>
-        <div className="swiper-slide slide swiper-bg" style={{backgroundImage: "url(" + "../../public/images/slider/slider3.jpg" + ")",
+        <div className="swiper-slide slide swiper-bg" style={{backgroundImage: "url(" + "images/slider/slider3.jpg" + ")",
             backgroundPosition: 'center center',
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
