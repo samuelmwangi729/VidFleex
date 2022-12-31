@@ -108,7 +108,7 @@ const Upcoming = () => {
                   </div>
                </div>
             </div>
-         </section>
+      </section>
       
        
     </React.Fragment>
