@@ -535,7 +535,7 @@ const Trending = () => {
                                     </div>
                                 </div>
                             </div>
-                            </div>
+                        </div>
                      </div>
                   </div>
                </div>

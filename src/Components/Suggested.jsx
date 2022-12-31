@@ -50,10 +50,10 @@ const Suggested = () => {
                                  <li className="swiper-slide slide-item">
                                     <div className="block-images position-relative ">
                                        <div className="img-box">
-                                          <img src={item.Image} className="img-fluid" alt="" loading="lazy" width={200+"px"} height={150 +"px !important"}/>
+                                          <img src={item.Image} className="img-fluid" alt="" loading="lazy" width={220+"px"} height={150 +"px !important"}/>
                                        </div>
                                        <div className="block-description">
-                                          <h6 className="iq-title"><a href="show-detail.html">{item.Title}</a></h6>
+                                          <h6 className="iq-title"><a href="show-detail.html" style={{fontSize:15+"px",whiteSpace:'normal',float:'left'}}>{item.Title}</a></h6>
                                           <div className="movie-time d-flex align-items-center my-2">
                                              <span className="text-white"> 
                                              {Math.floor(item.MovieLength/60)}
