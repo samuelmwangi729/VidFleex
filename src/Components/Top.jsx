@@ -13,7 +13,6 @@ import axios from 'axios';
   // install Swiper modules
 SwiperCore.use([Navigation,Pagination,Mousewheel]);
 const Top = () => {
-    const [img,setImg] = useState("")
     const [loading,isLoading] = useState(true)
     const [tops,setTops] = useState([])
     const getTops = async ()=>{

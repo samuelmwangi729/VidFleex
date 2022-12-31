@@ -51,7 +51,7 @@ const Latest = () => {
                                         <li class="swiper-slide slide-item">
                                             <div class="block-images position-relative ">
                                                 <div class="img-box" height={150 +"px !important"}>
-                                                    <img src={item.Image} class="img-fluid" alt="" loading="lazy" width={200+"px"} height={150 +"px !important"}/>
+                                                    <img src={item.Banner} class="img-fluid" alt="" loading="lazy" width={200+"px"} height={150 +"px !important"}/>
                                                 </div>
                                                 <div class="block-description">
                                                     <h6 class="iq-title"><a href="video-detail.html" style={{fontSize:12+"px"}}>{item.Title}</a></h6>
