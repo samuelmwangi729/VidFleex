@@ -20,7 +20,7 @@ const Top = () => {
                 <section class="slider">
                   <div class="slider-flex position-relative">
                         <div class="swiper-button-prev verticle-btn"></div>
-                        <h4 class="main-title ">Top 10 in United States</h4>
+                        <h4 class="main-title ">Top 10 in Africa</h4>
                         <div class="slider--col position-relative">
                             <div class="slider-thumbs" data-swiper="slider-thumbs">
                             <div class="swiper-container " data-swiper="slider-thumbs-inner">

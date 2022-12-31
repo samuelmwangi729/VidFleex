@@ -54,17 +54,17 @@ const Latest = () => {
                                                     <img src={item.Image} class="img-fluid" alt="" loading="lazy" width={200+"px"} height={150 +"px !important"}/>
                                                 </div>
                                                 <div class="block-description">
-                                                    <h6 class="iq-title"><a href="video-detail.html" style={{fontSize:15+"px"}}>{item.Title}</a></h6>
+                                                    <h6 class="iq-title"><a href="video-detail.html" style={{fontSize:12+"px"}}>{item.Title}</a></h6>
                                                     <div class="movie-time d-flex align-items-center my-2">
-                                                    <span class="text-white">
-                                                        {item.MovieLength == 0 ? (
-                                                            <h6>No Timed</h6>
+                                                    <span className="text-white"> 
+                                                        {Math.floor(item.MovieLength/60)}
+                                                        {Math.floor(item.MovieLength/60) == 1 ? (
+                                                            " Hr "
                                                         ) : (
-                                                            <>
-                                                            Approx. {Math.round(item.MovieLength/60)} Hrs
-                                                            </>
+                                                            " Hrs "
                                                         )}
-                                                        </span>
+                                                        {item.MovieLength % 60} Mins
+                                                    </span>
                                                     </div>
                                                     <div class="hover-buttons">
                                                     <a href="video-detail.html" role="button" class="btn btn-hover"><i
