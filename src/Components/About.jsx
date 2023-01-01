@@ -24,7 +24,7 @@ const About = () => {
             <div className="col-lg-12 col-sm-12 mb-sm-4">
                <div className="text-center iq-title-box iq-title-default">
                   <h2 className="iq-title text-capitalize">
-                     Masterminds team
+                    The Team
                   </h2>
                   <p className="iq-title-desc">Your Streamit is build by one of the best and well experienced web developers and an <br/>awarded Envato Elite Author.</p>
                </div>
@@ -35,53 +35,53 @@ const About = () => {
          <div className="row about-us-detail">
             <div className="col-md-3 mb-4">
                <div className="image-box">
-                  <img width="265" height="345" src="images/about-us/02.jpg" className="img-fluid attachment-large size-large" alt="" loading="lazy"/>
+                  <img width="265" height="345" src="https://pbs.twimg.com/profile_images/1462714291849764869/IKmrN08B_400x400.jpg" className="img-fluid attachment-large size-large" alt="" loading="lazy"/>
                </div>
                <div className="icon-box-content">
                   <div className="widget-container">
                      <p className="heading-title size-default">ceo</p>
                   </div>
                   <div className="widget-container">
-                     <h4 className="heading-title size-default">Tonny Smith</h4>
+                     <h4 className="heading-title size-default" style={{fontSize:20+"px",whiteSpace:'no-wrap'}}>Gen. P1rate Stelle</h4>
                   </div>
                </div>
             </div>
             <div className="col-md-3 mb-4">
                <div className="image-box">
-                  <img width="265" height="345" src="images/about-us/03.jpg" className="img-fluid attachment-large size-large" alt="" loading="lazy"/>
+                  <img width="265" height="345" src="https://pbs.twimg.com/profile_images/1462714291849764869/IKmrN08B_400x400.jpg" className="img-fluid attachment-large size-large" alt="" loading="lazy"/>
                </div>
                <div className="icon-box-content">
                   <div className="widget-container">
                      <p className="heading-title size-default">Designer</p>
                   </div>
                   <div className="widget-container">
-                     <h4 className="heading-title size-default">Barry Tech</h4>
+                     <h4 className="heading-title size-default" style={{fontSize:20+"px",whiteSpace:'no-wrap'}}>Gen. P1rate Stelle</h4>
                   </div>
                </div>
             </div>
             <div className="col-md-3 mb-4">
                <div className="image-box">
-                  <img width="265" height="345" src="images/about-us/04.jpg" className="img-fluid attachment-large size-large" alt="" loading="lazy"/>
+                  <img width="265" height="345" src="https://pbs.twimg.com/profile_images/1462714291849764869/IKmrN08B_400x400.jpg" className="img-fluid attachment-large size-large" alt="" loading="lazy"/>
                </div>
                <div className="icon-box-content">
                   <div className="widget-container">
                      <p className="heading-title size-default">Developer</p>
                   </div>
                   <div className="widget-container">
-                     <h4 className="heading-title size-default">kep John</h4>
+                     <h4 className="heading-title size-default" style={{fontSize:20+"px",whiteSpace:'no-wrap'}}>Gen. P1rate Stelle</h4>
                   </div>
                </div>
             </div>
             <div className="col-md-3 mb-4">
                <div className="image-box">
-                  <img width="265" height="345" src="images/about-us/05.jpg" className="img-fluid attachment-large size-large" alt="" loading="lazy"/>
+                  <img width="265" height="345" src="https://pbs.twimg.com/profile_images/1462714291849764869/IKmrN08B_400x400.jpg" className="img-fluid attachment-large size-large" alt="" loading="lazy"/>
                </div>
                <div className="icon-box-content">
                   <div className="widget-container">
                      <p className="heading-title size-default">Designer</p>
                   </div>
                   <div className="widget-container">
-                     <h4 className="heading-title size-default">Monty Rock</h4>
+                     <h4 className="heading-title size-default" style={{fontSize:20+"px",whiteSpace:'no-wrap'}}>Gen. P1rate Stelle</h4>
                   </div>
                </div>
             </div>

@@ -82,8 +82,8 @@ const Trending = () => {
                                                 <div class=" trending-info align-items-center w-100 animated fadeInUp iq-ltr-direction">
                                                     <a href="javascript:void(0);" tabindex="0">
                                                         <div class="res-logo">
-                                                            <div class="channel-logo">
-                                                            <img src="images/logo.png" class="c-logo" alt="streamit"/>
+                                                            <div class="channel-lso">
+                                                            <img src={mostpopular.Image} class="c-logo" alt="streamit"/>
                                                             </div>
                                                         </div>
                                                     </a>
