@@ -26,7 +26,11 @@ const About = () => {
                   <h2 className="iq-title text-capitalize">
                     The Team
                   </h2>
-                  <p className="iq-title-desc">Your Streamit is build by one of the best and well experienced web developers and an <br/>awarded Envato Elite Author.</p>
+                  <p className="iq-title-desc">
+                     This Platform is entired build for educational purposes by the one and only Mwangi S. who is a full stack dev. 
+                     My tech stack is Python, Apache , NGINX , 
+                  </p>
+
                </div>
             </div>
          </div>

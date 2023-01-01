@@ -7,9 +7,9 @@ const App = () => {
       <Header/>
       <Routes>
       <Route index element={<Homepage/>}/>
-      <Route path='/Genres' element={<Genres/>}/>
+      {/* <Route path='/Genres' element={<Genres/>}/> */}
       <Route path='/Movies' element={<Videos/>}/>
-      <Route path='/Blog' element={<Blog/>}/>
+      {/* <Route path='/Blog' element={<Blog/>}/> */}
       <Route path='/About' element={<About/>}/>
       <Route path='/Contact' element={<Contact/>}/>
       </Routes>
