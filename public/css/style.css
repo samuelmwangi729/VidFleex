@@ -4658,15 +4658,12 @@ transition: 3s;
     right: 0em;
 }
 .banner-container .movie-banner-1{
-	background: url("../images/movie-banner/01.png");
 	background-size: cover;
 }
 .banner-container .movie-banner-2{
-	background: url("../images/movie-banner/02.jpg");
 	background-size: cover;
 }
 .banner-container .movie-banner-3{
-	background: url("../images/movie-banner/03.jpg");
 	background-size: cover;
 }
 .w-trailor {
@@ -4679,27 +4676,21 @@ transition: 3s;
     vertical-align: middle;
 }
 .swiper-banner-container .show-banner-1{
-	background: url("../images/upcoming/01.jpg");
 	background-size: cover;
 }
 .swiper-banner-container  .show-banner-2{
-	background: url("../images/tvthrillers/02.jpg");
 	background-size: cover;
 }
 .swiper-banner-container  .show-banner-3{
-	background: url("../images/tvthrillers/04.jpg");
 	background-size: cover;
 }
 .swiper-banner-container .show-video-banner-1{
-	background: url("../images/video/04.jpg");
 	background-size: cover;
 }
 .swiper-banner-container .show-video-banner-2{
-	background: url("../images/video/09.jpg");
 	background-size: cover;
 }
 .swiper-banner-container .show-video-banner-3{
-	background: url("../images/video/08.jpg");
 	background-size: cover;
 }
 .tvshows-slider .swiper-banner-button-next, .tvshows-slider .swiper-banner-button-prev {

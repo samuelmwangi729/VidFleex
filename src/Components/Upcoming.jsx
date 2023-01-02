@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation"
-
+import { Link } from 'react-router-dom'
 // import Swiper core and required modules
 import SwiperCore, {
     Navigation
@@ -65,10 +65,10 @@ const Upcoming = () => {
                                              </span>
                                           </div>
                                           <div className="hover-buttons">
-                                             <a href="show-detail.html" role="button" className="btn btn-hover"><i
-                                                className="fa fa-play mr-1" aria-hidden="true"></i>
-                                             Play Now
-                                             </a>
+                                          <Link to={`${"/Details/"+item.RandomId}`} className="btn btn-hover">
+                                                        <i className="fa fa-play mr-1" aria-hidden="true"></i>
+                                                        Play Now
+                                                        </Link>
                                           </div>
                                        </div>
                                        <div className="block-social-info">
