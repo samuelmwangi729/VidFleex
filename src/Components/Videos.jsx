@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import Latest from './Latest'
 import Popular from './Popular'
 import "swiper/css";
+import { Link } from 'react-router-dom'
 import "swiper/css/navigation"
 import SwiperCore, {
     Navigation
@@ -23,7 +24,7 @@ const Videos = () => {
     },[])
   return (
     <>
-     <section className="banner-container iq-rtl-direction">
+     <section className="banner-container iq-rtl-direction pt-5">
         <div className="movie-banner tvshows-slider">
             <div className="swiper-banner-container "  data-swiper="banner-detail-slider">
                 <div className="swiper-wrapper">
@@ -66,20 +67,26 @@ const Videos = () => {
                                                     </p>
                                                 </div>
                                                 <div className="d-flex align-items-center r-mb-23" data-animation-in="fadeInUp" data-delay-in="1.2">
-                                                    <a href="movie-details.html" className="btn btn-hover iq-button"><i className="fa fa-play mr-2"
-                                                            aria-hidden="true"></i>Play Now</a>
+                                                <Link to={`${"/Details/"+item.RandomId}`}className="btn btn-hover iq-button">
+                                                <i className="fa fa-play mr-2"
+                                                            aria-hidden="true"></i>Play Now
+                                                </Link>
                                                 </div>
                                                 </div>
                                                 <div className="col-lg-5 col-md-12 trailor-video iq-slider d-none d-lg-block">
-                                                <a href="video/trailer.mp4" className="video-open playbtn">
-                                                    
-                                                    <span className="w-trailor" style={{
-                                                        backgroundColor:'red',
-                                                        padding:'15px'
-                                                    }}>
-                                                        <i className='fa fa-play-circle'></i>
-                                                        Watch Trailer</span>
-                                                </a>
+                                                <Link to={`${"/Details/"+item.RandomId}`} className="video-open playbtn" tabIndex="0">
+                                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                        xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="80px" height="80px"
+                                                        viewBox="0 0 213.7 213.7" enableBackground="new 0 0 213.7 213.7" xmlSpace="preserve">
+                                                        <polygon className="triangle" fill="none" strokeWidth="7" strokeLinecap="round"
+                                                            strokeLinejoin="round" strokeMiterlimit="10"
+                                                            points="73.5,62.5 148.5,105.8 73.5,149.1 "></polygon>
+                                                        <circle className="circle" fill="none" strokeWidth="7" strokeLinecap="round"
+                                                            strokeLinejoin="round" strokeMiterlimit="10" cx="106.8" cy="106.8" r="103.3">
+                                                        </circle>
+                                                    </svg>
+                                                    <span className="w-trailor">Watch Trailer</span>
+                                                </Link>
                                                 </div>
                                             </div>
                                         </div>

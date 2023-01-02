@@ -9,7 +9,7 @@ import SwiperCore, {
     Navigation
   } from 'swiper';
 import axios from 'axios';
-  
+  import { Link } from 'react-router-dom'
   // install Swiper modules
   SwiperCore.use([Navigation]);
   
@@ -68,38 +68,11 @@ const Recommended = () => {
                                                     </span>
                                                     </div>
                                                     <div class="hover-buttons">
-                                                    <a href="video-detail.html" role="button" class="btn btn-hover"><i
-                                                            class="fa fa-play mr-1" aria-hidden="true"></i>
+                                                    <Link to={`${"/Details/"+item.RandomId}`} className="btn btn-hover">
+                                                        <i className="fa fa-play mr-1" aria-hidden="true"></i>
                                                         Play Now
-                                                    </a>
+                                                    </Link>
                                                     </div>
-                                                </div>
-                                                <div class="block-social-info">
-                                                    <ul class="list-inline p-0 m-0 music-play-lists">
-                                                    <li class="share">
-                                                        <span><i class="ri-share-fill"></i></span>
-                                                        <div class="share-box">
-                                                            <div class="d-flex align-items-center">
-                                                                <a href="https://www.facebook.com/sharer?u=https://iqonic.design/wp-themes/streamit_wp/movie/shadow/"
-                                                                target="_blank" rel="noopener noreferrer" class="share-ico" tabindex="0"><i
-                                                                    class="ri-facebook-fill"></i></a>
-                                                                <a href="https://twitter.com/intent/tweet?text=Currentlyreading"
-                                                                target="_blank" rel="noopener noreferrer" class="share-ico" tabindex="0"><i
-                                                                    class="ri-twitter-fill"></i></a>
-                                                                <a href="#"
-                                                                data-link="https://iqonic.design/wp-themes/streamit_wp/movie/shadow/"
-                                                                class="share-ico iq-copy-link" tabindex="0"><i
-                                                                    class="ri-links-fill"></i></a>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <span><i class="ri-heart-fill"></i></span>
-                                                        <span class="count-box">2+</span>
-                                                    </li>
-                                                    <li><span><i class="ri-add-line"></i></span></li>
-        
-                                                    </ul>
                                                 </div>
                                             </div>
                                         </li>

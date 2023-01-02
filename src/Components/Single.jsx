@@ -1,8 +1,19 @@
 import axios from 'axios'
 import React ,{useState,useEffect} from 'react'
 import { useParams,Link } from 'react-router-dom'
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
 import { FacebookShareButton,FacebookIcon,TwitterIcon,TwitterShareButton,LinkedinShareButton,LinkedinIcon,WhatsappShareButton, WhatsappIcon } from 'react-share'
 const Single = () => {
+  const MySwal = withReactContent(Swal)
+  const workInProgress = ()=>{
+    MySwal.fire({
+      icon: 'success',
+      title: 'Oops...',
+      text: 'This is Work In Progress',
+      footer: '<a href="/">Back to Home</a>'
+    })
+  }
     const {movieId} = useParams()
     const currentUrl = window.location.href
     const [details,setDetails] = useState('')
@@ -83,7 +94,7 @@ const Single = () => {
                         </div>
                      </div>
                      <div className="position-relative">
-                        <a href="show-detail.html"
+                        <a href="#trailer"
                            className="d-flex align-items-center">
                            <div className="play-button">
                               <i className="ri-play-fill"></i>
@@ -91,12 +102,12 @@ const Single = () => {
                            <h4 className="w-name text-white font-weight-700">
                             Watch  For <br></br>
                             {Math.floor(details.MovieLength/60)}
-                                             {Math.floor(details.MovieLength/60) == 1 ? (
-                                                " Hr "
-                                             ) : (
-                                                " Hrs "
-                                             )}
-                                              {details.MovieLength % 60} Mins                           
+                              {Math.floor(details.MovieLength/60) == 1 ? (
+                                 " Hr "
+                              ) : (
+                                 " Hrs "
+                              )}
+                                 {details.MovieLength % 60} Mins                           
                            </h4>
                         </a>
                      </div>
@@ -114,7 +125,7 @@ const Single = () => {
                                         <TwitterIcon  size={40}/>
                                       </TwitterShareButton>
                                       <LinkedinShareButton url={currentUrl}>
-                                              <LinkedinIcon  size={40}/>
+                                          <LinkedinIcon  size={40}/>
                                       </LinkedinShareButton>
                                       <WhatsappShareButton url={currentUrl} >
                                         <WhatsappIcon size={40} />
@@ -123,10 +134,10 @@ const Single = () => {
                                  </div>
                               </li>
                               <li className="mb-0">
-                                 <span><i className="ri-heart-fill"></i></span>
+                                 <span onClick={workInProgress}><i className="ri-heart-fill"></i></span>
                               </li>
                               <li className="mb-0">
-                                 <span><i className="ri-add-line"></i></span>
+                                 <span onClick={workInProgress}><i className="ri-add-line"></i></span>
                               </li>
                            </ul>
                            <ul
@@ -190,9 +201,9 @@ const Single = () => {
                   <h2>Trailer</h2>
                   {loadingt ? "Loading Trailer " : (
                   <iframe width="853" height="480" src={trailer.Link}
-                   title={trailer.MovieName} frameborder="0"
+                   title={trailer.MovieName} frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen>
+                    allowFullScreen>
 
                     </iframe>
                   )}

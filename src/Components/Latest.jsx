@@ -9,11 +9,23 @@ import axios from 'axios'
 import SwiperCore, {
     Navigation
   } from 'swiper';
-  
+  const currentUrl = window.location.href
+  import Swal from 'sweetalert2'
+  import withReactContent from 'sweetalert2-react-content'
   // install Swiper modules
+
   SwiperCore.use([Navigation]);
-  
+import { FacebookShareButton,FacebookIcon,TwitterIcon,TwitterShareButton,LinkedinShareButton,LinkedinIcon,WhatsappShareButton, WhatsappIcon } from 'react-share'
 const Latest = () => {
+    const MySwal = withReactContent(Swal)
+  const workInProgress = ()=>{
+    MySwal.fire({
+      icon: 'success',
+      title: 'Oops...',
+      text: 'This is Work In Progress',
+      footer: '<a href="/">Back to Home</a>'
+    })
+  }
     const [isLoading,setLoading] = useState(true)
     const [latest,setLatest] = useState([])
     const fetchLatest = async ()=>{
@@ -33,7 +45,7 @@ const Latest = () => {
                <div className="col-sm-12 overflow-hidden">
                   <div className="iq-ltr-direction d-flex align-items-center justify-content-between">
                      <h4 className="main-title">Latest Videos</h4>
-                     <a href="view-all-video.html" className="text-primary">View All</a>
+                     <Link className="text-primary">View All</Link>
                   </div>
                </div>
             </div>
@@ -80,25 +92,27 @@ const Latest = () => {
                                                         <span><i className="ri-share-fill"></i></span>
                                                         <div className="share-box">
                                                             <div className="d-flex align-items-center">
-                                                                <a href="https://www.facebook.com/sharer?u=https://iqonic.design/wp-themes/streamit_wp/movie/shadow/"
-                                                                target="_blank" rel="noopener noreferrer" className="share-ico" tabindex="0"><i
-                                                                    className="ri-facebook-fill"></i></a>
-                                                                <a href="https://twitter.com/intent/tweet?text=Currentlyreading"
-                                                                target="_blank" rel="noopener noreferrer" className="share-ico" tabindex="0"><i
-                                                                    className="ri-twitter-fill"></i></a>
-                                                                <a href="#"
-                                                                data-link="https://iqonic.design/wp-themes/streamit_wp/movie/shadow/"
-                                                                className="share-ico iq-copy-link" tabindex="0"><i
-                                                                    className="ri-links-fill"></i></a>
+                                                            <FacebookShareButton url={currentUrl}>
+                                                                <FacebookIcon size={40}/>
+                                                            </FacebookShareButton>
+                                                            <TwitterShareButton url={currentUrl}>
+                                                                <TwitterIcon  size={40}/>
+                                                            </TwitterShareButton>
+                                                            <LinkedinShareButton url={currentUrl}>
+                                                                    <LinkedinIcon  size={40}/>
+                                                            </LinkedinShareButton>
+                                                            <WhatsappShareButton url={currentUrl} >
+                                                                <WhatsappIcon size={40} />
+                                                            </WhatsappShareButton>
                                                             </div>
                                                         </div>
                                                     </li>
-                                                    <li>
-                                                        <span><i className="ri-heart-fill"></i></span>
-                                                        <span className="count-box">2+</span>
+                                                    <li className="mb-0">
+                                                        <span onClick={workInProgress}><i className="ri-heart-fill"></i></span>
                                                     </li>
-                                                    <li><span><i className="ri-add-line"></i></span></li>
-        
+                                                    <li className="mb-0">
+                                                        <span onClick={workInProgress}><i className="ri-add-line"></i></span>
+                                                    </li>
                                                     </ul>
                                                 </div>
                                             </div>

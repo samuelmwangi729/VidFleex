@@ -1,6 +1,6 @@
 import axios from 'axios'
 import React,{useState,useEffect} from 'react'
-
+import { Link } from 'react-router-dom'
 const Featured = () => {
    const [loading,isLoading] = useState(true)
    const [movie,setMovie] = useState([])
@@ -61,17 +61,19 @@ const Featured = () => {
                         {movie.Description}
                      </p>
                      <div class="parallax-buttons">
-                        <a href="movie-details.html" class="btn btn-hover"><i class="fa fa-play mr-1"
-                           aria-hidden="true"></i>Play Now</a>
+                     <Link to={`${"/Details/"+movie.RandomId}`} className="btn btn-hover">
+                        <i className="fa fa-play mr-1" aria-hidden="true"></i>
+                        Play Now
+                     </Link>
                      </div>
                   </div>
                </div>
                <div class="col-xl-7 col-lg-12 col-md-12 mt-5 mt-xl-0">
                   <div class="parallax-img">
-                     <a href="movie-details.html">
-                     <img src={movie.Banner} class="img-fluid w-100" loading="lazy" alt="bailey" style={{
-                     }}/>
-                     </a>
+                     <Link to={`${"/Details/"+movie.RandomId}`}>
+                        <img src={movie.Banner} class="img-fluid w-100" loading="lazy" alt="bailey" style={{
+                        }}/>
+                     </Link>
                   </div>
                </div>
             </div>

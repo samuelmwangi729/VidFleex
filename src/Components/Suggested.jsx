@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation"
-
+import { Link } from 'react-router-dom'
 // import Swiper core and required modules
 import SwiperCore, {
     Navigation
@@ -66,37 +66,14 @@ const Suggested = () => {
                                              </span>
                                           </div>
                                           <div className="hover-buttons">
-                                             <a href="show-detail.html" role="button" className="btn btn-hover"><i
-                                                className="fa fa-play mr-1" aria-hidden="true"></i>
+                                          <Link to={`${"/Details/"+item.RandomId}`} className="btn btn-hover">
+                                             <i className="fa fa-play mr-1" aria-hidden="true"></i>
                                              Play Now
-                                             </a>
+                                          </Link>
                                           </div>
                                        </div>
                                        <div className="block-social-info">
-                                          <ul className="list-inline p-0 m-0 music-play-lists">
-                                             <li className="share">
-                                                <span><i className="ri-share-fill"></i></span>
-                                                <div className="share-box">
-                                                   <div className="d-flex align-items-center">
-                                                      <a href="https://www.facebook.com/sharer?u=https://iqonic.design/wp-themes/streamit_wp/movie/shadow/"
-                                                         target="_blank" rel="noopener noreferrer" className="share-ico" tabindex="0"><i
-                                                         className="ri-facebook-fill"></i></a>
-                                                      <a href="https://twitter.com/intent/tweet?text=Currentlyreading"
-                                                         target="_blank" rel="noopener noreferrer" className="share-ico" tabindex="0"><i
-                                                         className="ri-twitter-fill"></i></a>
-                                                      <a href="#"
-                                                         data-link="https://iqonic.design/wp-themes/streamit_wp/movie/shadow/"
-                                                         className="share-ico iq-copy-link" tabindex="0"><i
-                                                         className="ri-links-fill"></i></a>
-                                                   </div>
-                                                </div>
-                                             </li>
-                                             <li>
-                                                <span><i className="ri-heart-fill"></i></span>
-                                                <span className="count-box">2+</span>
-                                             </li>
-                                             <li><span><i className="ri-add-line"></i></span></li>
-                                          </ul>
+                                          
                                        </div>
                                     </div>
                                  </li>

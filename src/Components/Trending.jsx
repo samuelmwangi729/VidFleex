@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation"
-
+import { Link } from 'react-router-dom'
 // import Swiper core and required modules
 import SwiperCore, {
     Navigation
@@ -54,11 +54,11 @@ const Trending = () => {
                                             {trending.map((item,index)=>(
                                                 <SwiperSlide>
                                                     <li class="swiper-slide">
-                                                        <a href="javascript:void(0);" >
-                                                            <div class="movie-swiper position-relative">
+                                                    <Link to={`${"/Details/"+item.RandomId}`}>
+                                                        <div class="movie-swiper position-relative">
                                                             <img src={item.Banner} alt="" /> 
-                                                            </div>
-                                                        </a>
+                                                        </div>
+                                                    </Link>
                                                     </li>
                                                 </SwiperSlide>
                                             ))}
@@ -94,16 +94,19 @@ const Trending = () => {
                                                         <span class="trending-year">{mostpopular.YoR}</span>
                                                     </div>
                                                     <div class="d-flex align-items-center series mb-4">
-                                                        <a href="javascript:void(0);"><img src="images/trending/trending-label.png"
-                                                            class="img-fluid" alt=""/></a>
+                                                        <a href="javascript:void(0);">
+                                                            <img src="images/trending/trending-label.png" class="img-fluid" alt=""/>
+                                                            </a>
                                                     </div>
                                                     <p class="trending-dec">
                                                         {mostpopular.Description}
                                                     </p>
                                                     <div class="p-btns">
                                                         <div class="d-flex align-items-center p-0">
-                                                            <a href="show-details.html" class="btn btn-hover mr-2" tabindex="0"><i
-                                                            class="fa fa-play mr-2" aria-hidden="true"></i>Play Now</a>
+                                                        <Link to={`${"/Details/"+mostpopular.RandomId}`} className="btn btn-hover">
+                                                            <i className="fa fa-play mr-1" aria-hidden="true"></i>
+                                                            Play Now
+                                                        </Link>
                                                         </div>
                                                     </div>
                                                     <div class="trending-list mt-4">
